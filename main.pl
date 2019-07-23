@@ -6,7 +6,7 @@ use Term::ReadPassword qw(read_password);
 use experimental 'smartmatch';
 require File::Temp;
 
-my $VERSION='0.0.2';
+my $VERSION='0.0.3';
 
 my $image_file;
 my $device;

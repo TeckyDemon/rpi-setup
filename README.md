@@ -44,6 +44,7 @@
 * Run following commands in the terminal:
 ```
 sudo apt install git perl -y
+sudo cpan -Ti Term::ReadPassword
 git clone "https://github.com/DeBos99/rpi-setup.git"
 ```
 
@@ -52,6 +53,7 @@ git clone "https://github.com/DeBos99/rpi-setup.git"
 * Run following commands in the terminal:
 ```
 sudo pacman -S git perl --noconfirm
+sudo cpan -Ti Term::ReadPassword
 git clone "https://github.com/DeBos99/rpi-setup.git"
 ```
 
@@ -60,6 +62,7 @@ git clone "https://github.com/DeBos99/rpi-setup.git"
 * Run following commands in the terminal:
 ```
 sudo yum install git perl -y
+sudo cpan -Ti Term::ReadPassword
 git clone "https://github.com/DeBos99/rpi-setup.git"
 ```
 
@@ -68,6 +71,7 @@ git clone "https://github.com/DeBos99/rpi-setup.git"
 * Run following commands in the terminal:
 ```
 brew install git perl
+sudo cpan -Ti Term::ReadPassword
 git clone "https://github.com/DeBos99/rpi-setup.git"
 ```
 
