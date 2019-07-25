@@ -6,7 +6,7 @@ use Term::ANSIColor qw(color colored);
 use Term::ReadPassword qw(read_password);
 require File::Temp;
 
-my $VERSION='1.0.4';
+my $VERSION='1.0.5';
 
 my $image_file;
 my $device;
@@ -37,7 +37,7 @@ do{
 		when(['-S','--no-ssh']){$use_ssh=0}
 		when(['-N','--no-network']){$configure_network=0}
 		when(['-s','--ssid']){$SSID=get_arg(1,1)}
-		when(['-c','--countr-code']){$country_code=get_arg(1,1)}
+		when(['-c','--country-code']){$country_code=get_arg(1,1)}
 		when(['-I','--no-static-ip']){$configure_static_ip=0}
 		when('--interface'){$interface=get_arg(1,1)}
 		when('--ip'){$IP=get_arg(1,1)}

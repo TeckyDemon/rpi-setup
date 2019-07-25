@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.5] - 2019-07-25
+
+### Fixed
+
+##### [main.pl](main.pl)
+
+- Typo.
+
 ## [1.0.4] - 2019-07-23
 
 ### Added
