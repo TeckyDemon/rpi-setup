@@ -6,7 +6,7 @@ use Term::ANSIColor qw(color colored);
 use Term::ReadPassword qw(read_password);
 require File::Temp;
 
-my $VERSION='1.0.7';
+my $VERSION='1.0.8';
 
 my $image_file;
 my $device;
@@ -23,7 +23,7 @@ my $block_size='4M';
 
 sub get_arg{
 	my $arg=shift @ARGV;
-	if(!$arg||$arg=~/^-{1,2}.+/){die colored "[-] Wrong number of arguments for \"$_\".\nExpected $_[1].\nGot ".($_[0]-1).".\n",'red'}
+	if(not defined $arg||$arg=~/^-{1,2}.+/){die colored "[-] Wrong number of arguments for \"$_\".\nExpected $_[1].\nGot ".($_[0]-1).".\n",'red'}
 	return $arg;
 }
 do{
