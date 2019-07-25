@@ -6,7 +6,7 @@ use Term::ANSIColor qw(color colored);
 use Term::ReadPassword qw(read_password);
 require File::Temp;
 
-my $VERSION='1.0.5';
+my $VERSION='1.0.6';
 
 my $image_file;
 my $device;
@@ -34,11 +34,11 @@ do{
 		}
 		when(['-i','--image']){$image_file=get_arg(1,1)}
 		when(['-d','--device']){$device=get_arg(1,1)}
-		when(['-S','--no-ssh']){$use_ssh=0}
-		when(['-N','--no-network']){$configure_network=0}
+		when(['-S','--ssh']){$use_ssh=1}
+		when(['-N','--network']){$configure_network=1}
 		when(['-s','--ssid']){$SSID=get_arg(1,1)}
-		when(['-c','--country-code']){$country_code=get_arg(1,1)}
-		when(['-I','--no-static-ip']){$configure_static_ip=0}
+		when(['-c','--countr-code']){$country_code=get_arg(1,1)}
+		when(['-I','--static-ip']){$configure_static_ip=1}
 		when('--interface'){$interface=get_arg(1,1)}
 		when('--ip'){$IP=get_arg(1,1)}
 		when(['-r','--routers']){$routers=get_arg(1,1)}
@@ -51,11 +51,11 @@ do{
 			print "  -v, --version            show version and exit\n";
 			print "  -i, --image FILE\n            set path to the image file\n";
 			print "  -d, --device DEVICE\n            set device\n";
-			print "  -S, --no-ssh\n            turn off SSH\n";
-			print "  -N, --no-network\n            turn off network configuration\n";
+			print "  -S, --ssh\n            turn on SSH\n";
+			print "  -N, --network\n            turn on network configuration\n";
 			print "  -s, --ssid SSID\n            set SSID\n";
 			print "  -c, --country-code CODE\n            set country code\n";
-			print "  -I, --no-static-ip\n            turn off static IP configuration\n";
+			print "  -I, --static-ip\n            turn on static IP configuration\n";
 			print "  --interface INTERFACE\n            set interface\n";
 			print "  --ip IP\n            set static IP\n";
 			print "  -r, --routers IP\n            set routers\n";

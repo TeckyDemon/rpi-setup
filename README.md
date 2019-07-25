@@ -24,6 +24,7 @@
 ## Content
 
 - [Content](#content)
+- [Features](#features)
 - [Installation](#installation)
   - [Debian/Ubuntu](#apt)
   - [Arch Linux/Manjaro](#pacman)
@@ -36,6 +37,12 @@
 - [Authors](#authors)
 - [Contact](#contact)
 - [License](#license)
+
+## Features
+
+* SSH configuration.
+* Network configuration.
+* Static IP configuration.
 
 ## Installation
 
@@ -94,11 +101,11 @@ git clone "https://github.com/DeBos99/rpi-setup.git"
 | :----------------------------- | :---------------------------------- | :------------ |
 | -h<br>--help                   | Shows help message and exits.       |               |
 | -v<br>--version                | Shows version and exits.            |               |
-| -S<br>--no-ssh                 | Turns off SSH.                      | False         |
-| -N<br>--no-network             | Turns off network configuration.    | False         |
+| -S<br>--no-ssh                 | Turns on SSH.                       | False         |
+| -N<br>--no-network             | Turns on network configuration.     | False         |
 | -s<br>--ssid SSID              | Sets SSID to **SSID**.              |               |
 | -c<br>--country-code CODE      | Sets country code to **CODE**.      |               |
-| -I<br>--no-static-ip           | Turns off static IP configuration.  |               |
+| -I<br>--no-static-ip           | Turns on static IP configuration.   | False         |
 | --interface INTERFACE          | Sets interface to **INTERFACE**.    |               |
 | --ip IP                        | Sets static IP to **IP**.           |               |
 | -r<br>--routers IP             | Sets routers to **IP**.             |               |

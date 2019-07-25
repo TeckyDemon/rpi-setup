@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.6] - 2019-07-25
+
+### Added
+
+##### [README.md](README.md)
+
+- `Features` section.
+- Missing default value.
+
+### Changed
+
+##### [main.pl](main.pl)
+
+- Arguments meaning.
+
 ## [1.0.5] - 2019-07-25
 
 ### Fixed
