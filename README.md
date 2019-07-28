@@ -90,27 +90,27 @@ git clone "https://github.com/DeBos99/rpi-setup.git"
 
 ### Required arguments
 
-| Argument              | Description                              |
-| :-------------------- | :--------------------------------------- |
-| -i<br>--image FILE    | Sets path to the image file to **FILE**. |
-| -d<br>--device DEVICE | Sets device to **DEVICE**.               |
+| Argument            | Description              |
+| :------------------ | :----------------------- |
+| -i, --image PATH    | Sets path to image file. |
+| -d, --device DEVICE | Sets device.             |
 
 ### Optional arguments
 
-| Argument                       | Description                         | Default value |
-| :----------------------------- | :---------------------------------- | :------------ |
-| -h<br>--help                   | Shows help message and exits.       |               |
-| -v<br>--version                | Shows version and exits.            |               |
-| -S<br>--no-ssh                 | Turns on SSH.                       | False         |
-| -N<br>--no-network             | Turns on network configuration.     | False         |
-| -s<br>--ssid SSID              | Sets SSID to **SSID**.              |               |
-| -c<br>--country-code CODE      | Sets country code to **CODE**.      |               |
-| -I<br>--no-static-ip           | Turns on static IP configuration.   | False         |
-| --interface INTERFACE          | Sets interface to **INTERFACE**.    |               |
-| --ip IP                        | Sets static IP to **IP**.           |               |
-| -r<br>--routers IP             | Sets routers to **IP**.             |               |
-| -d<br>--domain-name-servers IP | Sets domain name servers to **IP**. |               |
-| -b<br>--block-size SIZE        | Sets block size to **SIZE**.        | 4M            |
+| Argument                     | Description                      | Default value |
+| :--------------------------- | :------------------------------- | :------------ |
+| -h, --help                   | Shows help message and exits.    |               |
+| -v, --version                | Shows version and exits.         |               |
+| -S, --ssh                    | Enables SSH.                     | false         |
+| -N, --network                | Enables network configuration.   | false         |
+| -s, --ssid SSID              | Sets SSID.                       |               |
+| -c, --country-code CODE      | Sets country code.               |               |
+| -I, --static-ip              | Enables static IP configuration. | false         |
+| --interface INTERFACE        | Sets interface.                  |               |
+| --ip IP                      | Sets static IP.                  |               |
+| -r, --routers IP             | Sets routers.                    |               |
+| -d, --domain-name-servers IP | Sets domain name servers.        |               |
+| -b, --block-size SIZE        | Sets block size.                 | 4M            |
 
 
 ## Authors

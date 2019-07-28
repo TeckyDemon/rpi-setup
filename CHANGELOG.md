@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.9] - 2019-07-28
+
+##### [main.pl](main.pl)
+
+- Descriptions of arguments.
+
+##### [README.md](README.md)
+
+- Descriptions of arguments.
+
 ## [1.0.8] - 2019-07-25
 
 ### Fixed

@@ -6,7 +6,7 @@ use Term::ANSIColor qw(color colored);
 use Term::ReadPassword qw(read_password);
 require File::Temp;
 
-my $VERSION='1.0.8';
+my $VERSION='1.0.9';
 
 my $image_file;
 my $device;
@@ -46,16 +46,16 @@ do{
 		when(['-b','--block-size']){$block_size=get_arg(1,1)}
 		default{
 			print color 'blue';
-			print "usage: perl main.pl [-h] [-v] -i FILE -d DEVICE [-S] [-N] [-s SSID] [-c CODE] [-I] [--interface INTERFACE] [--ip IP] [-r IP] [-D IP] [-b SIZE]\n";
-			print "  -h, --help            show this help message and exit\n";
+			print "usage: perl main.pl [-h] [-v] -i PATH -d DEVICE [-S] [-N] [-s SSID] [-c CODE] [-I] [--interface INTERFACE] [--ip IP] [-r IP] [-D IP] [-b SIZE]\n";
+			print "  -h, --help            show help message and exit\n";
 			print "  -v, --version            show version and exit\n";
-			print "  -i, --image FILE\n            set path to the image file\n";
+			print "  -i, --image PATH\n            set path to image file\n";
 			print "  -d, --device DEVICE\n            set device\n";
-			print "  -S, --ssh\n            turn on SSH\n";
-			print "  -N, --network\n            turn on network configuration\n";
+			print "  -S, --ssh\n            enable SSH\n";
+			print "  -N, --network\n            enable network configuration\n";
 			print "  -s, --ssid SSID\n            set SSID\n";
 			print "  -c, --country-code CODE\n            set country code\n";
-			print "  -I, --static-ip\n            turn on static IP configuration\n";
+			print "  -I, --static-ip\n            enable static IP configuration\n";
 			print "  --interface INTERFACE\n            set interface\n";
 			print "  --ip IP\n            set static IP\n";
 			print "  -r, --routers IP\n            set routers\n";
