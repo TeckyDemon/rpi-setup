@@ -6,7 +6,7 @@ use Term::ANSIColor qw(color colored);
 use Term::ReadPassword qw(read_password);
 require File::Temp;
 
-my $VERSION='1.0.9';
+my $VERSION='1.0.10';
 
 my $image_file;
 my $device;
