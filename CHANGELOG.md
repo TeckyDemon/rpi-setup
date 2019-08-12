@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.11] - 2019-08-12
+
+### Removed
+
+- [.gitignore](.gitignore) file.
+
 ## [1.0.10] - 2019-07-28
 
 ##### [README.md](README.md)
